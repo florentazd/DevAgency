@@ -440,6 +440,7 @@ main{
 .service-card p{
     font-size: 16px;
     color: #03045E70;
+    min-height: 100px;
 }
 
 .card-logo-container{
