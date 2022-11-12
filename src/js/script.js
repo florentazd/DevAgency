@@ -1,22 +1,19 @@
 let body = document.querySelector("body")
-let popup = document.getElementById("popup-staff")
-let popupClose = document.getElementById("popup-staff-close")
-let banPopup = document.getElementById("popup-staff-ban")
+// let popup = document.getElementById("popup-staff")
+// let popupClose = document.getElementById("popup-staff-close")
+// let banPopup = document.getElementById("popup-staff-ban")
 
-body.addEventListener("scroll", (e)=>{
-    console.log(e);
-    console.log("SS");
-})
-popupClose.addEventListener("click", ()=>{
-    popup.style.visibility="hidden"
-})
-banPopup.addEventListener("click", ()=>{
-    localStorage.setItem("popup-staff-hidden", true)
-    popup.style.visibility="hidden"
 
-})
+// popupClose.addEventListener("click", ()=>{
+//     popup.style.visibility="hidden"
+// })
+// banPopup.addEventListener("click", ()=>{
+//     localStorage.setItem("popup-staff-hidden", true)
+//     popup.style.visibility="hidden"
 
-setTimeout(()=>{
-    if(!localStorage.getItem("popup-staff-hidden"))
-        popup.style.visibility="visible"
-}, 5000)
+// })
+
+// setTimeout(()=>{
+//     if(!localStorage.getItem("popup-staff-hidden"))
+//         popup.style.visibility="visible"
+// }, 5000)
