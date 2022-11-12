@@ -34,6 +34,7 @@ body{
     min-height: 100vh;
     width: 100%;
     height: fit-content;
+    overflow-x: hidden;
 }
 /* home */
 #home{
@@ -213,9 +214,6 @@ font-family: Poppins;
     user-select: none;
 
 }
-@media screen and (max-width: 960px){}
-@media screen and (max-width: 960px){}
-
 .nav-right{
 
 }
@@ -250,11 +248,14 @@ font-family: Poppins;
     }
     #devis{
         background-color: #03045E;
-        color: #fff;
         font-weight: 700;
         padding: 10px;
         border-radius: 5px;
         transition: all ease 0.5s;
+    }
+    #devis a{
+        color: #fff;
+
     }
     #devis:hover{
         background-color: #f39c12;
@@ -302,7 +303,7 @@ main{
 .main-left-section p{
     color: #03045E80;
 }
-.main-left-section button{
+.main-left-section a{
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
@@ -313,6 +314,9 @@ main{
     color: #fff;
     cursor: pointer;
     max-width: 260px;
+    display: grid;
+    place-content: center;
+    z-index: 100;
 }
 @media screen and (max-width: 960px){
     .main-left-section{
@@ -436,14 +440,6 @@ main{
     font-size: 16px;
     color: #03045E70;
 }
-@media screen and (min-width: 960px){
-    .service-card{
-        /* width: 500px !important; */
-    }
-}
-@media screen and (max-width: 960px){
-
-}
 
 .card-logo-container{
     height: 100px;
@@ -516,10 +512,6 @@ main{
     .count-element-container h4{
         font-size: 64px;
     }
-
-    /* .count-element-container p{
-        font-size: 40px;
-    } */
 }
 
 /* Pricing */
@@ -561,7 +553,6 @@ main{
 
 .pricing-card-select{
     background-color: transparent;
-    color: #03045E;
     font-size: 18px;
     font-weight: 500;
     border: 1px solid #03045E;
@@ -570,8 +561,16 @@ main{
     min-width: 200px;
     transition: all ease 0.5s;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
 }
-.pricing-card-select:not(#middle-pack button):hover{
+@media screen and (max-width: 960px){
+    .pricing-card-select{
+        font-size: 16px;
+    }
+}
+.pricing-card-select:not(#middle-pack a):hover{
     background-color: #03045E;
     color:#fff;
 
@@ -616,7 +615,7 @@ main{
     border: 1px solid #f39c12;
     color: #f39c12;
 }
-#middle-pack button{
+#middle-pack a{
     background-color: #f39c12;
     color: #fff;
     border: none;
@@ -628,20 +627,18 @@ main{
 }
 
 #devis-2{
-    background-color: transparent;
+    background-color: #03045E;
     border: 1px solid #03045E;
     border-radius: 5px;
-    color: #03045E;
+    color: #fff;
     font-size: 16px;
     padding: 10px;
-    transition: all ease 0.5s;
     cursor: pointer;
     min-width: 300px;
-}
-
-#devis-2:hover{
-    background-color: #03045E;
-    color: #fff;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer */
@@ -787,7 +784,6 @@ footer{
 .popup-card-footer{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    /* justify-content: center; */
     width: 100%;
 }
 .popup-card-footer button{
@@ -807,4 +803,7 @@ footer{
     font-weight: bold;
     border-radius: 5px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
